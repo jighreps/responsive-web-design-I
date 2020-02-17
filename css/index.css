@@ -1,15 +1,20 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
-
+.conainer{
+  width: 800px;
+  /*display:flex;  */
+}
 
 /* NAVIGATION BAR */
+header {
+  display:flex;
+  justify-content: center;
+}
 nav a {
   text-decoration: none;
-  padding: 40px;
   color: gray;
-  
-  
+  margin-left: 60px;
 }
 
 nav a:hover {
@@ -22,14 +27,19 @@ nav a:hover {
 /* INNOVATION ON DEMAND/CIRCLE PICTURE SECTION */
 .innovation {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 10%;
+  justify-content: center;
+  /* padding-left: 20%;  */
   padding-top: 5%;
-  position: relative;
+  
+  /* position: relative; */
 }
 
+ .btn {
+  margin-left: 97px;
+}  
+
 .ondemand {
-  position: absolute;
+  position: center;
   top: 100px;
   left: 300px;
 }
@@ -45,11 +55,17 @@ nav a:hover {
 .ondemand p {
   display: flex;
   width: 70%;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   /* text-align: center; */
   padding: 7px 40px;
   border: 1px solid black;
 }
+
+
+
+/* .circle-logo {
+  justify-content: flex-end;
+} */
 /* END INNOVATION ON DEMAND/CIRCLE PICTURE SECTION */
 
 
