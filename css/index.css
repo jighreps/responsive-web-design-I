@@ -1,20 +1,25 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
 .conainer{
-  width: 800px;
+  width: 1024px;
   /*display:flex;  */
 }
 
 /* NAVIGATION BAR */
 header {
   display:flex;
-  justify-content: center;
+   justify-content: center; 
+  /* width: 800px; */
 }
 nav a {
   text-decoration: none;
   color: gray;
   margin-left: 60px;
+  padding: 40px;
+  font-weight: bold ;
+  
 }
 
 nav a:hover {
@@ -28,14 +33,12 @@ nav a:hover {
 .innovation {
   display: flex;
   justify-content: center;
-  /* padding-left: 20%;  */
   padding-top: 5%;
-  
-  /* position: relative; */
-}
+ }
 
  .btn {
   margin-left: 97px;
+  
 }  
 
 .ondemand {
@@ -55,35 +58,44 @@ nav a:hover {
 .ondemand p {
   display: flex;
   width: 70%;
-  /* justify-content: flex-end; */
-  /* text-align: center; */
   padding: 7px 40px;
   border: 1px solid black;
 }
-
-
-
-/* .circle-logo {
-  justify-content: flex-end;
-} */
 /* END INNOVATION ON DEMAND/CIRCLE PICTURE SECTION */
 
 
 /* MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
 .moreinfo {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  margin-left: 600px;
+  width: 800px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+
+/* 1st hr divider */
+.first-divide {
+  width: 800px;
+  margin-left: 600px;
+  
+} 
+
+/* 2nd hr divider */
+.divide-two {
+  width: 800px;
+  margin-left: 600px;
+}
+
+
 .features {
   justify-content: space-evenly;
   width: 100%;
 }
 /* image in middle */
 .middle-img {
-  width: 100%;
+  width: 800px;
+  margin-left: 600px;
 }
 /* END MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
 
