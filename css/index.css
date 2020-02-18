@@ -209,65 +209,109 @@ nav a:hover {
 
 /* MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
 .moreinfo {
+  border: 1px solid black;
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 500px;
-  width: 1100px; 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-left: 10%;
+  width: 80%; 
+  
 }
+/* .moreinfo p {
+  font-weight: ;
+} */
 
 /* 1st hr divider */
 .first-divide {
-  width: 1100px;
-  margin-left: 450px;
+  width: 100%;
+  
 }
 
 /* 2nd hr divider */
 .divide-two {
-  width: 1100px;
-  margin-left: 450px;
+  width: 100%;
+ 
 }
 
 .features {
-  justify-content: space-evenly;
-  width: 350px;
-  padding: 15px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; 
+   padding: 2%;
+}
+
+.features h3{
+  font-weight: bold;
+  font-size: 2em;
+  /* justify-content: space-between; */
 }
 /* image in middle */
 .middle-img {
-  width: 1100px;
-  margin-left: 450px;
+  width: 80%;
+  margin-left: 10%;
+  
+  
+
 }
 /* END MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
 
 /*footer section */
 footer {
   width: 100%;
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 address {
-  padding-top: 40px;
-  padding-bottom: 100px;
-  margin-left: 50px;
+  border: 1px solid black;
+  padding: 3%;
+  margin-left:7.5%;
+  /* padding-top: 40px; */
+  /* padding-bottom: 100px; */
+  /* margin-left: 50px; */
+}
+address h3{
+  
+  font-weight:bold;
+  display:flex;
+  
 }
 
 .copyright {
+  border: 1px solid black;
+  width:100%;
   display: flex;
-  justify-content: center;
-  margin-right: 650px;
+  justify-content: space-around; 
+  
 }
 
 /* This is for tablet size browser */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body {
-    /* padding-left: 800px; */
+    
     background-color: red;
   }
+  header{
+    /* display:flex; */
+    flex-direction: column-reverse;
+  }
 
-  .innovation {
+  .circle-logo {
+    display:none;
   }
 }
 
-@media (max-width: 480px;) {
+@media(max-width: 500px) {
+  .moreinfo{
+    flex-wrap: wrap; 
+    flex-direction: column;
+  }
+
+  header nav{
+    flex-direction: column;
+    margin-left: 85%;
+    
+  }
+
+
+
 }
+
+
