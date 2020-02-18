@@ -1,56 +1,35 @@
- <!-- <!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Great Idea - Responsive I</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-</body>
-</html>   --> 
-
-
-
-
-
-
-
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Great Idea! - Responsive I</title>
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-  <!-- [if lt IE 9]>  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <!-- ![endif]> -->
+   
 </head>
 
 
 <!--BODY SECTION -->
 <body>
- <div id="container"> 
+  <div class="container"> 
 
   
     <!--CONTAINER HOLDING PAGE TOGETHER-->
 
     <!--NAVIGATION BAR WITH HEADER-->
-  <header>
-      <nav>
+    <header>
+      <nav class="nav-class">
         <a href="#">Services</a>
         <a href="#">Product</a>
         <a href="#">Vision</a>
         <a href="#">Features</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-        <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
       </nav>
-  </header> <!-- END OF NAVIGATION BAR -->
+      <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
+    </header> <!-- END OF NAVIGATION BAR -->
   
 
     <!-- INNOVATION SECTION -->
@@ -60,14 +39,14 @@
         <h2 class="on">On</h2>
         <h2 class="demand">Demand</h2>
         
-      <div class="btn">
-        <button>Get Started</button>
-      </div>
-
+        <div class="btn">
+          <button>Get Started</button>
         </div>
+      </div>
+    
         
       <div class="circle-logo">
-      <img class="circle-logo" src="img/header-img.png" alt="Image of a code snippet.">
+        <img class="circle-logo" src="img/header-img.png" alt="Image of a code snippet.">
       </div>
     </section>
     <!--END OF INNOVATION SECTION-->
@@ -78,40 +57,45 @@
 
     <!-- INFORMATION SECTION -->
 
-    <div class="moreinfo">
+    <section class="moreinfo">
+      <div class="features"> <!--div 1 of moreinfo section-->
+        <h3 class="features">Features</h3>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
+        Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div> 
+
+      <div class="features"><!--div 2 of moreinfo section-->
+        <h3 class="features">About</h3>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
+        Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+    </section>
+    
+
+
+    <section>
+      <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+    </section>
+
+    <section class="moreinfo">
+      <div>
+        <h3 class="features">Services</h3>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
+          Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
+      </div>
+
       <div class="features">
-        <h3>Features</h3>
+        <h3 class="features">Product</h3>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
           Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
       </div>
-      <div class="features">
-        <h3>About</h3>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
-          Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-      </div>
-    </div>
 
-
-
-    <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
-
-    <div class="moreinfo">
-      <div class="services">
-        <h3>Services</h3>
+      <div>
+        <h3 class="features">Vision</h3>
         <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
           Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
       </div>
-      <div class="product">
-        <h3>Product</h3>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
-          Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-      </div>
-      <div class="vision">
-        <h3>Vision</h3>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
-          Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-      </div>
-    </div>
+    </section>
     </section> <!-- END OF INFORMATION SECTION -->
 
 
@@ -120,22 +104,17 @@
   </div>
   
   <footer>
-      <address>
-        <h3>Contact</h3>
-        123 Way 456 Street<br>
-        Somewhere, USA<br>
-        <br>
-        1 (888) 888-8888<br>
-        <br>
-        sales@greatidea.io
-      </address>
-      <p class="copyright">Copyright Great Idea! 2018</p>
-    </footer> <!-- END OF FOOTER -->
+    <address>
+      <h3>Contact</h3>
+      <p>123 Way 456 Street </p>
+      <p>Somewhere, USA</p>
+      <p>1 (888) 888-8888</p>
+      <p> sales@greatidea.io</p>
+    </address>
+    <p class="copyright">Copyright Great Idea! 2018</p>
+  </footer> <!-- END OF FOOTER -->
 
-   
-     
-   
- </div> <!-- END OF CONTAINER  -->
+  </div> <!-- END OF CONTAINER  -->
 </body>
 
 </html>
