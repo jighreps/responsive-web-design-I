@@ -1,3 +1,340 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  max-width: 100%;
+  border: 1px solid blue;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end of reset*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+/* NAVIGATION BAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 800px; */
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: gray;
+  /* display:flex; */
+  /* padding: 40px; */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+}
+/* END NAVIGATION BAR */
+
+/* INNOVATION ON DEMAND/CIRCLE PICTURE SECTION */
+.innovation {
+  display: flex;
+  justify-content: space-around;
+  margin-top:3%;
+}
+
+.innovation div{
+  /* border: 1px solid black; */
+  /* margin-left: 5%; */
+}
+
+.btn{
+  display:flex;
+  justify-content:center;
+  margin-top: 10%;
+  height: 7%;
+}
+
+.started{
+  width: 70%;
+}
+
+.ondemand {
+   padding-top: 3%; 
+  
+}
+.on {
+  padding-left: 95px;
+}
+.demand {
+  padding-left: 30px;
+}
+.ondemand h2 {
+  font-size: 60px;
+}
+.ondemand p {
+  display: flex;
+  width: 70%;
+  padding: 7px 40px;
+  /* border: 1px solid black; */
+}
+/* END INNOVATION ON DEMAND/CIRCLE PICTURE SECTION */
+
+/* MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
+.moreinfo {
+  /* border: 1px solid black; */
+  display: flex;
+  margin-left: 10%;
+  width: 80%; 
+  
+}
+/* .moreinfo p {
+  font-weight: ;
+} */
+
+/* 1st hr divider */
+.first-divide {
+  width: 100%;
+  
+}
+
+/* 2nd hr divider */
+.divide-two {
+  width: 100%;
+}
+
+.features {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 2%;
+}
+
+.features h3{
+  font-weight: bold;
+  font-size: 2em;
+  /* justify-content: space-between; */
+}
+/* image in middle */
+.middle-img {
+  width: 80%;
+  margin-left: 10%;
+  
+  
+
+}
+/* END MIDDLE PARAGRAPH WITH BIG PICTURE SECTION */
+
+/*footer section */
+footer {
+  width: 100%;
+  /* margin-left: 400px; */
+}
+address {
+  /* border: 1px solid black; */
+  padding: 3%;
+  margin-left:7.5%;
+  /* padding-top: 40px; */
+  /* padding-bottom: 100px; */
+  /* margin-left: 50px; */
+}
+address h3{
+  
+  font-weight:bold;
+  display:flex;
+  
+}
+
+.copyright {
+  /* border: 1px solid black; */
+  width:100%;
+  display: flex;
+  justify-content: space-around; 
+  
+}
+
+/* This is for tablet size browser */
+@media (max-width: 800px) {
+  
+  header{
+    /* display:flex; */
+    flex-direction: column-reverse;
+  }
+
+  .circle-logo {
+    display:none;
+  }
+}
+
+@media(max-width: 500px) {
+  
+
+
+  .moreinfo{
+    /* flex-wrap: wrap;  */
+    flex-direction: column;
+  }
+
+  header nav {
+    flex-direction: column;
+    /* align-items: center; */
+    
+    width: 100%;
+    padding-top: 2%;
+    font-size: 20px;
+    
+    
+    
+  }
+
+  .btn {
+    height: 10%;
+      }
+
+ a {
+     /* border:1px solid grey;  */
+     padding: 4%;
+     width: 92%;
+     border-top: 1px solid grey;
+     border-bottom: 1px solid grey;
+     display:flex;
+     justify-content: center;
+     /* align-items: center; */
+
+    
+    
+  }
+
+
+
+}
 
 
